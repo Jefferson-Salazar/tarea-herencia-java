@@ -12,6 +12,10 @@ import com.tarea.herencia.producto.ProductoPerecedero;
 import java.time.LocalDate;
 import com.tarea.herencia.figura.Rectangulo;
 import com.tarea.herencia.figura.Circulo;
+import com.tarea.herencia.libro.LibroDigital;
+import com.tarea.herencia.facturacion.Cliente;
+import com.tarea.herencia.facturacion.FacturaContado;
+import com.tarea.herencia.facturacion.FacturaCredito;
 
 public class Main {
 
@@ -28,6 +32,8 @@ public class Main {
         System.out.println();
 
         estudiante1.mostrar();
+        
+        
 
         System.out.println("\n=== EJERCICIO 2 ===");
 
@@ -48,11 +54,15 @@ public class Main {
         cuenta1.retirar(200);
         cuenta1.mostrarSaldo();
         
+        
+        
         System.out.println("\n=== EJERCICIO 3 ===");
 
         // probamos la clase perro
         Perro perro1 = new Perro();
         perro1.hacerSonido();
+        
+        
      
         System.out.println("\n=== EJERCICIO 4 ===");
 
@@ -65,6 +75,8 @@ public class Main {
         // probamos gerente con bono
         Gerente gerente1 = new Gerente("Maria", 4000, 1500);
         gerente1.mostrar();
+        
+        
   
         System.out.println("\n=== EJERCICIO 5 ===");
 
@@ -72,11 +84,15 @@ public class Main {
         Moto moto1 = new Moto("Yamaha", 180, 600);
         moto1.mostrarInfo();
         
+        
+        
         System.out.println("\n=== EJERCICIO 6 ===");
 
         // probamos el bus
         Bus bus1 = new Bus(40, "Zona 1 - Zona 10");
         bus1.descripcion();
+        
+        
         
         System.out.println("\n=== EJERCICIO 7 ===");
 
@@ -89,6 +105,8 @@ public class Main {
 
         producto2.mostrarInfo();
         
+        
+        
         System.out.println("\n=== EJERCICIO 8 ===");
 
         // probamos figuras
@@ -97,6 +115,30 @@ public class Main {
 
         System.out.println("Area del rectangulo: " + rect1.calcularArea());
         System.out.println("Area del circulo: " + circ1.calcularArea());
+        
+        
+        
+        System.out.println("\n=== EJERCICIO 9 ===");
+
+        // probamos libro digital
+        LibroDigital libro1 = new LibroDigital("Java Basico", "Juan Perez", 5.5);
+        libro1.mostrarInfo();
+        
+        System.out.println("\n=== EJERCICIO 10 ===");
+
+     // creamos cliente
+     Cliente cliente1 = new Cliente("Juan Lopez", "1234567-8");
+
+     // factura al contado
+     FacturaContado f1 = new FacturaContado(1, cliente1, 1000, 100);
+     f1.mostrar();
+
+     System.out.println();
+
+     // factura a credito
+     FacturaCredito f2 = new FacturaCredito(2, cliente1, 1000, 200, 4);
+     f2.mostrar();
+     f2.mostrarCuotas();
      
     }
 }
