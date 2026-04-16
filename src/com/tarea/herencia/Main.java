@@ -3,6 +3,7 @@ package com.tarea.herencia;
 import com.tarea.herencia.persona.Docente;
 import com.tarea.herencia.persona.Estudiante;
 import com.tarea.herencia.cuenta.CuentaCorriente;
+import com.tarea.herencia.animal.Perro;
 
 public class Main {
 
@@ -38,5 +39,11 @@ public class Main {
         System.out.println("Retirando Q200...");
         cuenta1.retirar(200);
         cuenta1.mostrarSaldo();
+        
+        System.out.println("\n=== EJERCICIO 3 ===");
+
+     // probamos la clase perro
+     Perro perro1 = new Perro();
+     perro1.hacerSonido();
     }
 }
