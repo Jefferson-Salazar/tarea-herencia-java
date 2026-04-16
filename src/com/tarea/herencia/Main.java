@@ -2,6 +2,7 @@ package com.tarea.herencia;
 
 import com.tarea.herencia.persona.Docente;
 import com.tarea.herencia.persona.Estudiante;
+import com.tarea.herencia.cuenta.CuentaCorriente;
 
 public class Main {
 
@@ -18,5 +19,24 @@ public class Main {
         System.out.println();
 
         estudiante1.mostrar();
+
+        System.out.println("\n=== EJERCICIO 2 ===");
+
+        // probamos una cuenta corriente con sobregiro
+        CuentaCorriente cuenta1 = new CuentaCorriente(500, 300);
+
+        cuenta1.mostrarSaldo();
+
+        System.out.println("Retirando Q200...");
+        cuenta1.retirar(200);
+        cuenta1.mostrarSaldo();
+
+        System.out.println("Retirando Q500...");
+        cuenta1.retirar(500);
+        cuenta1.mostrarSaldo();
+
+        System.out.println("Retirando Q200...");
+        cuenta1.retirar(200);
+        cuenta1.mostrarSaldo();
     }
 }
