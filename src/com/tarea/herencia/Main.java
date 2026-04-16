@@ -4,6 +4,8 @@ import com.tarea.herencia.persona.Docente;
 import com.tarea.herencia.persona.Estudiante;
 import com.tarea.herencia.cuenta.CuentaCorriente;
 import com.tarea.herencia.animal.Perro;
+import com.tarea.herencia.empleado.Empleado;
+import com.tarea.herencia.empleado.Gerente;
 
 public class Main {
 
@@ -45,5 +47,19 @@ public class Main {
      // probamos la clase perro
      Perro perro1 = new Perro();
      perro1.hacerSonido();
+     
+     System.out.println("\n=== EJERCICIO 4 ===");
+
+  // probamos empleado normal
+  Empleado emp1 = new Empleado("Luis", 3000);
+  emp1.mostrar();
+
+  System.out.println();
+
+  // probamos gerente con bono
+  Gerente gerente1 = new Gerente("Maria", 4000, 1500);
+  gerente1.mostrar();
+     
+     
     }
 }
