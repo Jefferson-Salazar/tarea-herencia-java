@@ -8,6 +8,8 @@ import com.tarea.herencia.empleado.Empleado;
 import com.tarea.herencia.empleado.Gerente;
 import com.tarea.herencia.vehiculo.Moto;
 import com.tarea.herencia.transporte.Bus;
+import com.tarea.herencia.producto.ProductoPerecedero;
+import java.time.LocalDate;
 
 public class Main {
 
@@ -73,6 +75,17 @@ public class Main {
         // probamos el bus
         Bus bus1 = new Bus(40, "Zona 1 - Zona 10");
         bus1.descripcion();
+        
+        System.out.println("\n=== EJERCICIO 7 ===");
+
+        // probamos producto perecedero
+        ProductoPerecedero producto1 = new ProductoPerecedero("Leche", 12.50, LocalDate.of(2026, 4, 10));
+        ProductoPerecedero producto2 = new ProductoPerecedero("Yogurt", 8.75, LocalDate.of(2026, 4, 25));
+
+        producto1.mostrarInfo();
+        System.out.println();
+
+        producto2.mostrarInfo();
      
     }
 }
