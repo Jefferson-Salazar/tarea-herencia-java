@@ -7,6 +7,7 @@ import com.tarea.herencia.animal.Perro;
 import com.tarea.herencia.empleado.Empleado;
 import com.tarea.herencia.empleado.Gerente;
 import com.tarea.herencia.vehiculo.Moto;
+import com.tarea.herencia.transporte.Bus;
 
 public class Main {
 
@@ -66,7 +67,12 @@ public class Main {
         //probamos la moto
         Moto moto1 = new Moto("Yamaha", 180, 600);
         moto1.mostrarInfo();
-     
+        
+        System.out.println("\n=== EJERCICIO 6 ===");
+
+        // probamos el bus
+        Bus bus1 = new Bus(40, "Zona 1 - Zona 10");
+        bus1.descripcion();
      
     }
 }
