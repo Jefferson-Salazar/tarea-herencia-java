@@ -10,6 +10,8 @@ import com.tarea.herencia.vehiculo.Moto;
 import com.tarea.herencia.transporte.Bus;
 import com.tarea.herencia.producto.ProductoPerecedero;
 import java.time.LocalDate;
+import com.tarea.herencia.figura.Rectangulo;
+import com.tarea.herencia.figura.Circulo;
 
 public class Main {
 
@@ -86,6 +88,15 @@ public class Main {
         System.out.println();
 
         producto2.mostrarInfo();
+        
+        System.out.println("\n=== EJERCICIO 8 ===");
+
+        // probamos figuras
+        Rectangulo rect1 = new Rectangulo(5, 10);
+        Circulo circ1 = new Circulo(7);
+
+        System.out.println("Area del rectangulo: " + rect1.calcularArea());
+        System.out.println("Area del circulo: " + circ1.calcularArea());
      
     }
 }
