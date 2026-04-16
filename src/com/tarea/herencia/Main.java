@@ -6,6 +6,7 @@ import com.tarea.herencia.cuenta.CuentaCorriente;
 import com.tarea.herencia.animal.Perro;
 import com.tarea.herencia.empleado.Empleado;
 import com.tarea.herencia.empleado.Gerente;
+import com.tarea.herencia.vehiculo.Moto;
 
 public class Main {
 
@@ -44,21 +45,27 @@ public class Main {
         
         System.out.println("\n=== EJERCICIO 3 ===");
 
-     // probamos la clase perro
-     Perro perro1 = new Perro();
-     perro1.hacerSonido();
+        // probamos la clase perro
+        Perro perro1 = new Perro();
+        perro1.hacerSonido();
      
-     System.out.println("\n=== EJERCICIO 4 ===");
+        System.out.println("\n=== EJERCICIO 4 ===");
 
-  // probamos empleado normal
-  Empleado emp1 = new Empleado("Luis", 3000);
-  emp1.mostrar();
+        // probamos empleado normal
+        Empleado emp1 = new Empleado("Luis", 3000);
+        emp1.mostrar();
 
-  System.out.println();
+        System.out.println();
 
-  // probamos gerente con bono
-  Gerente gerente1 = new Gerente("Maria", 4000, 1500);
-  gerente1.mostrar();
+        // probamos gerente con bono
+        Gerente gerente1 = new Gerente("Maria", 4000, 1500);
+        gerente1.mostrar();
+  
+        System.out.println("\n=== EJERCICIO 5 ===");
+
+        //probamos la moto
+        Moto moto1 = new Moto("Yamaha", 180, 600);
+        moto1.mostrarInfo();
      
      
     }
